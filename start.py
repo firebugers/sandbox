@@ -19,7 +19,7 @@ n=list(enumerate(A))
 f={}
 for x,y in n:
     f[y]=x
-print f, len(f)
+print f
 # Смена у словаря местами ключей и значений. 
 f={y:x for x,y in f.items()}   
-print f, len(f)  
+print f
