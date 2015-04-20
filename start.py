@@ -39,17 +39,17 @@ print f
     # Смена у словаря местами ключей и значений. 
 def change_dict(d): 
     """
-    >>> change_dict({1:'one',2:'two',3:'three'})
-    {'three': 3, 'two': 2, 'one': 1}
+    >>> change_dict({1:'one',2:'two',3:'three'})=={'three': 3, 'two': 2, 'one': 1}
+    True
     >>>
     """
     if type(d)==dict:   
         d={y:x for x,y in d.items()}   
-        print d
+        return d
     else:
         print 'Give me a dictionary'
         print d, type(d)
-change_dict(f)    
+print change_dict(f)    
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
